@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <form action="/froshims/register" method="post">
+    <form action="/register" method="post">
         <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
-        <select>
+        <select name="sport">
             <option disabled selected>Sport</option>
             <option value="Basketball">Basketball</option>
             <option value="Badminton">Badminton</option>
