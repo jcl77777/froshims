@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <ul>
+        {% for books in session["cart"] %}
+        <li>{{ books["books"] }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
